@@ -1,0 +1,86 @@
+
+.App {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  height: 400px;
+  width: 400px;
+  padding: 30px 15px 50px;
+  border-radius: 10px;
+  position: relative;
+  color: #fff;
+  border: 1px solid #cfcfcf;
+
+  span{
+    background-color: #008afe;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(-50%);
+  }
+
+  .content-wrapper {
+    height: 100%;
+    overflow-y: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: #bbbabb; 
+    }
+     
+    &::-webkit-scrollbar-thumb {
+      background: #fefeff; 
+      border: 1px solid #008afe;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+  }
+
+  button{
+    background-color: #1ba7b8;
+    border: none;
+    color: #fff;
+    width: 70px;
+    padding: 5px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.content-card {
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  p { 
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  .title {
+    background-color: #697279;
+    font-size: 1.2em;
+    border-bottom: 1px solid #656f75;
+  }
+  .content {
+    background-color: #6d777c;
+    font-size: 0.8em;
+  }
+}
